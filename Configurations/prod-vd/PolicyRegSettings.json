@@ -4,7 +4,7 @@
         "RegItemValueName": "ConnectedSearchUseWeb",
         "RegItemValueType": "DWord",
         "RegItemValue": "0",
-        "OptimizationState": "apply"
+        "OptimizationState": "skip"
     },
     {
         "RegItemPath": "HKLM:\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Search",
