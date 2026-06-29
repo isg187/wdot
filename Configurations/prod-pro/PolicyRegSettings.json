@@ -7,7 +7,7 @@
         "OptimizationState": "apply"
     },
     {
-        "RegItemPath": "HKU:\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Start",
+        "RegItemPath": "HKCU:\\Default\\Software\\Microsoft\\Windows\\CurrentVersion\\Start",
         "RegItemValueName": "AllAppsViewMode",
         "RegItemValueType": "DWord",
         "RegItemValue": "2",
