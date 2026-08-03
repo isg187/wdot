@@ -90,7 +90,7 @@
   },
   {
     "Name": "VSS",
-    "OptimizationState": "Apply",
+    "OptimizationState": "Skip",
     "URL": "https://docs.microsoft.com/en-us/windows-server/storage/file-server/volume-shadow-copy-service",
     "Description": "Volume Shadow Copy"
   },
