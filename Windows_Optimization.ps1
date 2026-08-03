@@ -67,10 +67,10 @@ Param (
 
     [Parameter(Mandatory = $true, ParameterSetName = 'ByConfigProfile')]
     [ArgumentCompleter( { Get-ChildItem -Path $PSScriptRoot\Configurations -Directory | Select-Object -ExpandProperty Name } )]
-    [string]$ConfigProfile,
+    [string]$ConfigProfile = 'prod-vd',
     [ValidateSet('All', 'WindowsMediaPlayer', 'AppxPackages', 'ScheduledTasks', 'DefaultUserSettings', 'LocalPolicy', 'Autologgers', 'Services', 'NetworkOptimizations', 'DiskCleanup')]
     [String[]]
-    $Optimizations,
+    $Optimizations= 'All',
 
     [Parameter()]
     [ValidateSet('All', 'Edge', 'RemoveLegacyIE', 'RemoveOneDrive')]
@@ -83,6 +83,7 @@ Param (
     [Parameter()]
     [Switch]$AcceptEULA
 )
+if (-not $AcceptEULA) { $AcceptEULA = $true }
 Begin
 {
     # Windows Desktop Optimization Tool Version
