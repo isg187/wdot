@@ -83,9 +83,9 @@ Param (
     [Parameter()]
     [Switch]$AcceptEULA
 )
-if (-not $AcceptEULA) { $AcceptEULA = $true }
 Begin
 {
+    if (-not $AcceptEULA) { $AcceptEULA = $true }
     # Windows Desktop Optimization Tool Version
     $WDOTVersion = '1.1.0.0'
 
