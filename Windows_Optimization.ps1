@@ -1,5 +1,5 @@
 ﻿#Requires -RunAsAdministrator
-#Requires -PSEdition Desktop
+# Requires -PSEdition Desktop
 
 <#####################################################################################################################################
 
